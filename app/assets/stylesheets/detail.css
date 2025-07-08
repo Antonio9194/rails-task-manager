@@ -1,0 +1,44 @@
+.container-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.task-details {
+  width: 100vh;
+  margin-top: 10%;
+  padding: 30px;
+  max-width: 600px;
+  background-color: white;
+  border: 2px solid black;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  font-family: 'Lora', serif;
+}
+
+.task-details h1 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
+.task-details p {
+  margin: 10px 0;
+  font-size: 1.1rem;
+  color: #444;
+}
+
+.task-details a {
+  display: inline-block;
+  margin-top: 20px;
+  font-weight: bold;
+  color: #007bff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.task-details a:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}

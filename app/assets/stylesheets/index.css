@@ -1,0 +1,66 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.main {
+  margin-top: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+li {
+  list-style: none;
+}
+
+li a {
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #007bff;
+}
+
+.card {
+  width: 250px;
+  margin-top: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid black;
+  border-radius: 20px;
+  padding-right: 20px;
+}
+
+.task-item {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* space between checkbox, title, and trash icon */
+  margin: 10px 0;
+}
+
+.task-item form {
+  margin: 0;
+}
+
+.task-title {
+  flex-grow: 1;
+}
+
+.delete-icon {
+  color: #888;
+}
+
+.delete-icon:hover {
+  color: red;
+}

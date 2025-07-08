@@ -1,13 +1,23 @@
-<h1>Tasks</h1>
-<ul>
+<div class="container">
+  <div class="main">
+     <h1>Tasks</h1>
+  <div class="card">
+    <ul>
   <% @tasks.each do |task| %>
-    <li>
-      <%= link_to task.title, task_path(task) %>
+    <li class="task-item">
+  <%= form_with model: task, method: :patch, local: true do |f| %>
+    <%= f.check_box :completed, { onchange: 'this.form.submit();' } %>
+  <% end %>
 
-      <%= link_to '<i class="fa-solid fa-trash-can"></i>'.html_safe, task_path(task), 
-          data: { turbo_method: :delete, turbo_confirm: "Are you sure?" } %>
-    </li>
+  <%= link_to task.title, task_path(task), class: "task-title" %>
+
+  <%= link_to '<i class="fa-solid fa-trash-can"></i>'.html_safe, task_path(task), 
+      data: { turbo_method: :delete, turbo_confirm: "Are you sure?" }, class: "delete-icon" %>
+</li>
   <% end %>
 </ul>
-
-<h5><%= link_to "Add new task!", new_task_path %></h5>
+  </div>
+  <h5><%= link_to "Add new task!", new_task_path %></h5>
+  </div>
+ 
+</div>
