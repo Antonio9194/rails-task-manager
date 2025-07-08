@@ -32,7 +32,7 @@ a:hover {
 }
 
 .card {
-  width: 250px;
+  width: 100vh;
   margin-top: 25%;
   display: flex;
   align-items: center;
